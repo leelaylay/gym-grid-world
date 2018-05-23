@@ -75,7 +75,7 @@ class BaseEnv(gym.Env):
         if self.max_step > 0 and self.step_cnt > self.max_step:
             done = True
         obs = self.get_obs()
-        info = None
+        info = self.get_info()
 
         return obs, rew, done, info
 
@@ -93,4 +93,4 @@ class BaseEnv(gym.Env):
 
     def get_bitmap(self):
         arr = np.array(self.image).reshape((*self.frame_size, 3))
-        return arr.astype('float32')
+        return arr.astype(np.uint8)
