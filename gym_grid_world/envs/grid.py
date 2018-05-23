@@ -169,10 +169,10 @@ class GridEnv(BaseEnv):
 
     def get_info(self):
         obs = np.array(self.image.getdata()).reshape((*self.frame_size, 3))
-        mmap = np.array(self.whole_image.getdata()).reshape((*self.whole_size, 3))
+        #mmap = np.array(self.whole_image.getdata()).reshape((*self.whole_size, 3))
         return {
             'obs': obs,
-            'map': mmap,
+            #'map': mmap,
         }
 
     def _get_center(self):
