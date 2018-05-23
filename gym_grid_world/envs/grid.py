@@ -168,12 +168,13 @@ class GridEnv(BaseEnv):
             self.image.paste(crop, box=(lc - l, tc - t))
 
     def get_info(self):
-        obs = np.array(self.image.getdata()).reshape((*self.frame_size, 3))
+        #obs = np.array(self.image.getdata()).reshape((*self.frame_size, 3))
         #mmap = np.array(self.whole_image.getdata()).reshape((*self.whole_size, 3))
-        return {
-            'obs': obs,
-            #'map': mmap,
-        }
+        #return {
+        #    'obs': obs,
+        #    'map': mmap,
+        #}
+        return {}
 
     def _get_center(self):
         raise NotImplementedError
