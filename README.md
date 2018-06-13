@@ -1,7 +1,7 @@
 Grid World Environments
 ===
 
-Forked from leomao/gym-grid-world and modified the code to compatible with gym.
+Forked from leomao/gym-grid-world and modified to compatible with gym.
 
 ## How to Use
 
