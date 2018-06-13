@@ -1,6 +1,8 @@
 Grid World Environments
 ===
 
+forked from leomao/gym-grid-world and modify the code to compatible with gym.
+
 ## How to Use
 
 ```
